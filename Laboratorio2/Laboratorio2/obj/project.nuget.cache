@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oAcOVKi8pu7sll2Izd1qbWS1G/EdDhMVtcIVHpBl+KAzwOOCfupB4HPNW8OBM2yJ5AX/qRxG9nO/gEua5DbYOg==",
+  "dgSpecHash": "Lznr+g//6NNYDdcGGzgZJoieKKJTa4eepC9ob6HU/hfrqPVUENeIMiYyyEAc/LStQTpoMvJIVQUeM0W0yY/VYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Laboratorio2\\Laboratorio2\\Laboratorio2.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Documents\\GitHub\\Laboratorio2Progra\\Laboratorio2\\Laboratorio2\\Laboratorio2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

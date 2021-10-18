@@ -2,7 +2,18 @@
     ViewData["Title"] = "Home Page";
 }
 
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="animate__animated animate__bounce">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+    @Html.ActionLink("Ir a MostrarInformacion", "MostrarInformacion", new { @class = "btn btn-success" })
+
+    <img src="http://4.bp.blogspot.com/-8-btzhBcXS4/T6ReCfEYdgI/AAAAAAAAAXI/Fy3qW7baCm4/s1600/webgraphic_bienvenidos-welcome.jpg" style="width:700px;height:500px;"/>

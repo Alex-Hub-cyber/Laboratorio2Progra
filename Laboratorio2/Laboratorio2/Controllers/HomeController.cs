@@ -57,11 +57,7 @@ namespace Laboratorio2.Controllers
             return Json(new { data = FormatoJson });
         }
 
-        public IActionResult GuardarDatos()
-        {
-            return View();
-        }
-        public IActionResult GuardarInformacion( ClsEspejoPersona GuardarDatos)
+        public IActionResult GuardarDatos(ClsEspejoPersona GuardarDatos)
         {
             persona GPersona = new persona();
 
@@ -91,8 +87,9 @@ namespace Laboratorio2.Controllers
                 return View("GuardarDatos");
             }
 
-
+           
         }
+      
 
        
     }
