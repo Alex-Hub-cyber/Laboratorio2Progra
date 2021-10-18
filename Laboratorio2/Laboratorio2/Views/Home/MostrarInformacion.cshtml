@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "MostrarInformacion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<div class="text-center">
+
+    <h1 style="color:blue" class="animate__animated animate__fadeInDown"> Bienvenido/a, puede ver la información</h1>
+</div>
+
+<table id="mitabla" class="table table-striped">
+
+    <thead>
+
+    <tbody>
+        <tr>
+            <th>
+
+                IdPersona
+
+            </th>
+
+
+            <th>
+                NombrePersona
+            </th>
+
+
+            <th>
+                EdadPersona
+            </th>
+
+
+
+
+            <th>
+                DescripcionPersona
+            </th>
+
+
+
+        </tr>
+
+
+    <tbody>
+</table>
+
+<button <i class="fas fa-save"></i> href="GuardarDatos">Enviar </button>
+@Html.ActionLink("Ir al Registro", "GuardarDatos", new { @class = "btn btn-success" })
+
+@section scripts{
+
+
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var tabla = $('#mitabla').DataTable({
+                "ajax": {
+                    "url": '/Home/GetAll',
+                    "type": "get",
+                    "datatype": "json"
+                },
+                "columns": [
+                    { "data": "idPersona", "name": "idPersona", "autoWidth": true },
+                    { "data": "nombrePersona", "name": "nombrePersona", "autoWidth": true },
+                    { "data": "edadPersona", "name": "edadPersona", "autoWidth": true },
+                    { "data": "descripcionPersona", "name": "descripcionPersona", "autoWidth": true }
+                ]
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+
+}
+
+
+
+

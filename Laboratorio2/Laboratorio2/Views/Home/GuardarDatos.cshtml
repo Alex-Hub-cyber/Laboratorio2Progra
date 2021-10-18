@@ -1,0 +1,73 @@
+﻿@model Laboratorio2.Models.ViewModels.ClsEspejoPersona
+@{
+    ViewData["Title"] = "GuardarDatos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<h1 class="animate__animated animate__backInDown">Hola puede Guardar su  Información</h1>
+<style>
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 54px;
+        color: aquamarine;
+    }
+</style>
+
+@using (Html.BeginForm("GuardarDatos", "Home", FormMethod.Post))
+{
+
+
+    <br />
+
+    @Html.LabelFor(G => G.NombrePersona)
+    @Html.TextBoxFor(G => G.NombrePersona)
+    @Html.ValidationMessageFor(G => G.NombrePersona)
+
+    <br />
+    <br />
+    @Html.LabelFor(G => G.EdadPersona)
+    @Html.TextBoxFor(G => G.EdadPersona)
+    @Html.ValidationMessageFor(G => G.EdadPersona)
+
+    <br />
+    <br />
+
+    @Html.LabelFor(G => G.DescripcionPersona)
+    @Html.TextBoxFor(G => G.DescripcionPersona)
+    @Html.ValidationMessageFor(G => G.DescripcionPersona)
+    <br />
+    <br />
+    <input style="color:red" type="submit" value="Guardar" />
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<p style="color:red">Puede ver la fecha y  hora @DateTime.Now</p>
